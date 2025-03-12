@@ -35,7 +35,7 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  // 🔹 APPBAR DENGAN FOTO PROFIL (TANPA ICON CART)
+
   PreferredSizeWidget _buildAppBar() {
     return AppBar(
       backgroundColor: Colors.white,
@@ -72,7 +72,7 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  // 🔹 LOGOUT FUNCTION
+
   void _logout() {
     ScaffoldMessenger.of(context).showSnackBar(
       const SnackBar(
@@ -89,7 +89,7 @@ class _HomeScreenState extends State<HomeScreen> {
     });
   }
 
-  // 🔹 TAMPILAN KARTU PRODUK DENGAN CART ICON YANG BERUBAH WARNA
+
   Widget _buildProductCard(BuildContext context, int index) {
     bool isSelected = selectedItems.contains(index);
 
@@ -140,7 +140,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     child: IconButton(
                       icon: Icon(
                         Icons.add_shopping_cart,
-                        color: isSelected ? Colors.red : Colors.blue, // Warna berubah jika ditekan
+                        color: isSelected ? Colors.red : Colors.blue, 
                       ),
                       onPressed: () {
                         setState(() {
