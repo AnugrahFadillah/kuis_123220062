@@ -13,7 +13,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  List<int> selectedItems = []; // List untuk menyimpan item yang telah ditekan
+  List<int> selectedItems = []; 
 
   @override
   Widget build(BuildContext context) {
