@@ -11,7 +11,7 @@ class DetailScreen extends StatefulWidget {
 }
 
 class _DetailScreenState extends State<DetailScreen> {
-  bool isAddedToCart = false; // Status apakah produk telah ditambahkan ke cart
+  bool isAddedToCart = false; 
 
   void _toggleCartStatus() {
     setState(() {
@@ -41,7 +41,7 @@ class _DetailScreenState extends State<DetailScreen> {
           IconButton(
             icon: Icon(
               Icons.shopping_cart,
-              color: isAddedToCart ? Colors.red : Colors.white, // Warna berubah saat ditekan
+              color: isAddedToCart ? Colors.red : Colors.white, 
             ),
             onPressed: _toggleCartStatus,
           ),
@@ -75,7 +75,7 @@ class _DetailScreenState extends State<DetailScreen> {
                     icon: Icon(
                       Icons.shopping_cart,
                       color: isAddedToCart ? Colors.red : Colors.grey,
-                      size: 24, // Ukuran ikon lebih kecil
+                      size: 24,
                     ),
                     onPressed: _toggleCartStatus,
                   ),
